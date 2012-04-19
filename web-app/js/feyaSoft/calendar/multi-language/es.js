@@ -1,8 +1,8 @@
 /**
  * CubeDrive MyCalendar
- * Copyright(c) 2006-2011, FeyaSoft Inc. All right reserved.
- * info@feyasoft.com
- * http://www.feyasoft.com
+ * Copyright(c) 2006-2012, FeyaSoft Inc. All right reserved.
+ * info@cubedrive.com
+ * http://www.cubedrive.com
  *
  * Please read license first before your use myCalendar, For more detail
  * information, please can visit our link: http://www.cubedrive.com/myCalendar
@@ -28,7 +28,7 @@ Ext.ux.calendar.Language = {
 
     // please help to transfer words after :. Thanks
     'CalendarWin':{
-        'title':'CubeDrive MyCalendar 2.5.3',
+        'title':'CubeDrive MyCalendar 2.5.5',
         'loadMask.msg':'Por favor, espere...'
     },
 
@@ -46,7 +46,7 @@ Ext.ux.calendar.Language = {
         'weekBtn.text':'Vista semanal',
         'monthBtn.text':'Vista mensual',
         'weekMenu.showAll.text':'Mostrar todo',
-        'weekMenu.onlyWeek.text':'Solo',
+        'weekMenu.onlyWeek.text':'Lunes a Viernes',
         'monthMenu.showAll.text':'Mostrar todo',
         'monthMenu.onlyWeek.text':'Lunes a Viernes',
         'moreMenu.setting.text':'Configuraci&oacute;n',
@@ -65,24 +65,28 @@ Ext.ux.calendar.Language = {
     },
 
     'EventHandler':{
-        'showOnlyItem.text':'Show this only',
-        'viewItem.hide.text':'Hide calendar',
-        'viewItem.show.text':'Show calendar',
-        'editItem.text':'Edit calendar',
-        'deleteItem.text':'Delete calendar',
-        'clearItem.text':'Empty calendar',
-        'wholeDay':'Whole day',
-        'untitled':'Untitled',
-        'unlockItem.text':'Unlock',
-        'lockItem.text':'Lock',
-        'editEvent.title':'Edit Event',
-        'deleteEvent.title':'Delete Event',
-        'more':'More',
-        'deleteRepeatPopup.title':'Confirm',
+        'showOnlyItem.text':'Mostrar solo este',
+        'viewItem.hide.text':'Ocultar calendario',
+        'viewItem.show.text':'Mostrar calendario',
+        'editItem.text':'Editar calendario',
+        'deleteItem.text':'Eliminar calendario',
+        'clearItem.text':'Vaciar calendario',
+        'wholeDay':'Todo el día',
+        'untitled':'Sin t&iacute;tulo',
+        'unlockItem.text':'Desbloquear',
+        'lockItem.text':'Bloquear',
+        'editEvent.title':'Editar Evento',
+        'deleteEvent.title':'Eliminar Evento',
+        'more':'Mas',
+        'deleteRepeatPopup.title':'Confirmar',
         'deleteRepeatPopup.msg':'Click "Yes" to delete all this repeat events, or click "No" to only delete the current event?',
-        'updateRepeatPopup.title':'Confirm',
+        'updateRepeatPopup.title':'Confirmar',
         'updateRepeatPopup.msg':'Click "Yes" to update for all this repeat events, or click "No" to only update for the current event?',
-        'shareItem.text':'Share Calendar'
+    'clearItemPopup.title':'Confirmar',
+	'clearItemPopup.msg':'Quieres realmente borrar todas las tareas de este calendario?',
+	'deleteCalendarPopup.title':'Confirmar',
+	'deleteCalendarPopup.msg':'Quieres realmente borrar este calendario?',
+        'shareItem.text':'Compartir Calendario'
     },
 
     'Editor':{
@@ -117,10 +121,10 @@ Ext.ux.calendar.Language = {
         'monthRadioGroup.label':'Repetir por',
         'repeatByDate':'Fecha',
         'repeatByDay':'D&iacute;a',
-        'alertLabel':'Reminder Setting',
-        'alertEarly.label':'Early',
-        'newAlertBtn.text':'New',
-        'deleteAlertBtn.label':'Remove',
+        'alertLabel':'Configuraci&oacute; de Aviso',
+        'alertEarly.label':'Antes',
+        'newAlertBtn.text':'Nuevo',
+        'deleteAlertBtn.label':'Quitar',
         'emailAlertEarlyInvalid':'The early time of Email Alert should be larger than 30 minutes.',
         'popupAlertEarlyInvalid':'The early time of Popup Alert should be less than 24 hours.',
         'repeatIntervalInvalid':'This value should be a positive integer!',
@@ -147,18 +151,19 @@ Ext.ux.calendar.Language = {
     },
 
     'ExpirePopup':{
-        'hideCB.label':'Don\'t popup any more',
-        'title':'Alerted Events',
-        'tpl.calendar':'Calendar',
-        'tpl.subject':'Subject',
-        'tpl.content':'Content',
-        'tpl.leftTime':'Left time',
-        'hour':'Hour(s)',
-        'minute':'Minute(s)',
-        'untitled':'Untitled',
-        'noContent':'No Content',
-        'cancelReminder':'CANCEL',
-        'editEvent':'EDIT'
+        'hideCB.label':'No mostrar más avisos',
+        'title':'Avisos de Eventos',
+        'tpl.calendar':'Calendario',
+        'tpl.subject':'Nombre',
+        'tpl.content':'Observaciones',
+        'tpl.leftTime':'Tiempo restante',
+        'hour':'Horas(s)',
+        'minute':'Minuto(s)',
+
+        'untitled':'Sin titulo',
+        'noContent':'Sin Contenido',
+        'cancelReminder':'CANCELAR',
+        'editEvent':'EDITAR'
     },
 
     'SettingPopup':{
@@ -186,7 +191,7 @@ Ext.ux.calendar.Language = {
         'intervalField.label':'Intervalo de tiempo',
         'startEndInvalid':'Hora de inicio  debe ser anterior a la hora de t&eacute;rmino!',
         'formatInvalid':'Ejemplo: 09:00',
-        'initialViewField.label':'Initial View'
+        'initialViewField.label':'Vista Inicial'
     },
 
     'ResultView':{
@@ -212,26 +217,26 @@ Ext.ux.calendar.Language = {
     },
 
     'MonthView':{
-        'loadMask.msg':'Please wait...',
+        'loadMask.msg':'Por favor, espere...',
         'overview':'Overview',
         'showingEvents':'Showing Events',
         'totalEvents':'Total Events',
         'dayPre':'',
-        'addItem.text':'New Event',
+        'addItem.text':'Nuevo Evento',
         'clearItem.text':'Clean Event',
-        'cutItem.text':'Cut',
-        'copyItem.text':'Copy',
-        'pasteItem.text':'Paste',
+        'cutItem.text':'Cortar',
+        'copyItem.text':'Copiar',
+        'pasteItem.text':'Pegar',
         'events':'events'
     },
 
     'Mask':{
-        '12Hours':'12 Hours',
-        '24Hours':'24 Hours',
+        '12Hours':'12 Horas',
+        '24Hours':'24 Horas',
         'ar': 'Arabic',
         'de': 'German',
         'en':'American English',
-        'es': 'Spanish',
+        'es': 'Español',
         'fr': 'Français',
         'it': 'Italiano',
         'ja': 'Japanese',
@@ -241,49 +246,49 @@ Ext.ux.calendar.Language = {
         'pt': 'Portuguese',
         'ru': 'Russian',
         'zh_CN':'简体中文',
-        'enable':'Enable',
-        'disable':'Disable',
-        'minute':'Minutes',
-        'monday':'Monday',
-        'sunday':'Sunday',
+        'enable':'Activado',
+        'disable':'Desactivado',
+        'minute':'Minutos',
+        'monday':'Lunes',
+        'sunday':'Domingo',
         'permitData':[
-            [0, 'Read, Write and Share'],
-            [1, 'Read and Write'],
-            [2, 'Read only']
+            [0, 'Lectura, Escritura y Compartir'],
+            [1, 'Lectura y Escritura'],
+            [2, 'Solo lectura']
         ],
         'alertType':[
-            ['popup', 'Popup Message'],
+            ['popup', 'Mensaje Emergente'],
             ['email', 'Email']
         ],
         'popupAlertUnit':[
-            ['minute', 'Minute(s)'],
-            ['hour', 'Hour(s)']
+            ['minute', 'Minuto(s)'],
+            ['hour', 'Hora(s)']
         ],
         'alertUnit':[
-            ['minute', 'Minute(s)'],
-            ['hour', 'Hour(s)'],
-            ['day', 'Day(s)'],
-            ['wek', 'Week(s)']
+            ['minute', 'Minuto(s)'],
+            ['hour', 'Hora(s)'],
+            ['day', 'Dia(s)'],
+            ['wek', 'Semana(s)']
         ],
         'initialView':[
-            [0, 'Day View'],
-            [1, 'Week View'],
-            [2, 'Month View']
+            [0, 'Vista Diaria'],
+            [1, 'Vista Semanal'],
+            [2, 'Vista Mensual'],
         ]
     },
 
     repeatType:[
-        ['no', 'Not Repeat'],
-        ['day', 'Daily'],
-        ['week', 'Weekly'],
-        ['month', 'Monthly'],
-        ['year', 'Yearly']
+        ['no', 'Sin Repetición'],
+        ['day', 'Diaria'],
+        ['week', 'Semanal'],
+        ['month', 'Mensual'],
+        ['year', 'Anual']
     ],
 
     getWeekDayInMonth:function(date){
-        var d = date.format('d');
+        var d = Ext.Date.format(date,'d');
         var w = Math.floor(d/7)+1;
-        var wd = date.format('l');
+        var wd = Ext.Date.format(date,'l');
         var str = 'the '+w;
         if(1 == w){
             str += 'st';
@@ -301,27 +306,27 @@ Ext.ux.calendar.Language = {
         var str = '';
         if('day' == rtype){
             if(1 == intervalSlot){
-                str = 'Everyday';
+                str = 'Cada d&iacute;a';
             }else{
-                str = 'Every '+intervalSlot+' days';
+                str = 'Cada '+intervalSlot+' dias';
             }
         }else if('week' == rtype){
             if(1 == intervalSlot){
-                str = 'Every week at ';
+                str = 'Cada semana el ';
             }else{
-                str = 'Every '+intervalSlot+' weeks at ';
+                str = 'Cada '+intervalSlot+' semanas el ';
             }
         }else if('month' == rtype){
             if(1 == intervalSlot){
-                str = 'Every month at ';
+                str = 'Cada mes el ';
             }else{
-                str = 'Every '+intervalSlot+' months at ';
+                str = 'Cada '+intervalSlot+' meses el ';
             }
         }else if('year' == rtype){
             if(1 == intervalSlot){
-                str = 'Every year at ';
+                str = 'Cada a&ntilde;o el ';
             }else{
-                str = 'Every '+intervalSlot+' years at ';
+                str = 'Cada '+intervalSlot+' a&ntilde;os el ';
             }
         }
         return str;
