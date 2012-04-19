@@ -28,7 +28,7 @@ Ext.ux.calendar.Language = {
 
     // please help to transfer words after :. Thanks
     'CalendarWin':{
-        'title':'CubeDrive MyCalendar 2.5.3',
+        'title':'CubeDrive MyCalendar 2.5.5',
         'loadMask.msg':'Please wait...'
     },
 
@@ -82,6 +82,10 @@ Ext.ux.calendar.Language = {
         'deleteRepeatPopup.msg':'Click "Yes" to delete all this repeat events, or click "No" to only delete the current event?',
         'updateRepeatPopup.title':'Confirm',
         'updateRepeatPopup.msg':'Click "Yes" to update for all this repeat events, or click "No" to only update for the current event?',
+        'clearItemPopup.title':'Hint',
+	    'clearItemPopup.msg':'Do you really want to delete all events of this calendar?',
+	    'deleteCalendarPopup.title':'Hint',
+	    'deleteCalendarPopup.msg':'Do you really want to delete this calendar?',
         'shareItem.text':'Share Calendar'
     },
 
