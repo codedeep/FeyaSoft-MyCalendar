@@ -82,6 +82,10 @@ Ext.ux.calendar.Language = {
         'deleteRepeatPopup.msg':'Click "Yes" to delete all this repeat events, or click "No" to only delete the current event?',
         'updateRepeatPopup.title':'Confirm',
         'updateRepeatPopup.msg':'Click "Yes" to update for all this repeat events, or click "No" to only update for the current event?',
+        'clearItemPopup.title':'Hint',
+	    'clearItemPopup.msg':'Do you really want to delete all events of this calendar?',
+    	'deleteCalendarPopup.title':'Hint',
+    	'deleteCalendarPopup.msg':'Do you really want to delete this calendar?',
         'shareItem.text':'Share Calendar'
     },
 
