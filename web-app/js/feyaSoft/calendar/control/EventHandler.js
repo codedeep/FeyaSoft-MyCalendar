@@ -682,8 +682,9 @@ Ext.extend(Ext.ux.calendar.EventHandler, Ext.util.Observable, {
      * For clear all events belong a calendar
      */
     onClearFn:function(item){
-        Ext.Msg.confirm('Hint',
-            'Do you really want to delete all events of this calendar?',
+	var lan = Ext.ux.calendar.Mask.EventHandler;
+	Ext.Msg.confirm(lan['clearItemPopup.title'],
+            lan['clearItemPopup.msg'],
             function(btn) {
                 if(btn == 'yes'){
                     var menu = item.parentMenu;
@@ -713,8 +714,9 @@ Ext.extend(Ext.ux.calendar.EventHandler, Ext.util.Observable, {
      * For delete a calendar and all events belong to it
      */
     onDeleteFn:function(item){
-        Ext.Msg.confirm('Hint',
-            'Do you really want to delete this calendar?',
+        var lan = Ext.ux.calendar.Mask.EventHandler;	
+        Ext.Msg.confirm(lan['deleteCalendarPopup.title'],
+            lan['deleteCalendarPopup.msg'],
             function(btn) {
                 if(btn == 'yes'){
                     var menu = item.parentMenu;
